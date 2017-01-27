@@ -9,7 +9,7 @@ RUN echo "America/Sao_Paulo" > /etc/timezone && dpkg-reconfigure -f noninteracti
 # add locale pt-br
 RUN apt-get update \
 	&& apt-get install -y locales \
-    && localedef -i pt_BR -c -f UTF-8 -A /usr/share/locale/locale.alias pt_BR.UTF-8
+        && localedef -i pt_BR -c -f UTF-8 -A /usr/share/locale/locale.alias pt_BR.UTF-8
 ENV LANG pt_BR.UTF8
 ENV LANGUAGE pt_BR:pt  
 ENV LC_ALL pt_BR.UTF-8 
