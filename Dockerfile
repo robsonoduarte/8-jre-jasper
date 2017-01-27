@@ -1,5 +1,5 @@
 FROM openjdk:8-jre
-MAINTAINER R3WA
+MAINTAINER robsonoduarte
 
 RUN  apt-get update
 
